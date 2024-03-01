@@ -1,0 +1,50 @@
+.dropdown {
+    position: relative;
+    display: inline-block;
+  
+    .dropdown-button {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      cursor: pointer;
+      outline: none;
+      background: #fff;
+      width: 100%;
+      display: flex;
+      justify-content: space-between; // 버튼 내부의 텍스트와 화살표를 양쪽 끝으로 정렬
+      align-items: center;
+  
+      .arrow {
+        transition: transform 0.3s ease; // 화살표 회전에 애니메이션 효과 적용
+      }
+    }
+  
+    .dropdown-list {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      border: 1px solid #ccc;
+      border-top: none;
+      border-radius: 0 0 4px 4px;
+      background: #fff;
+      width: 100%;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+      z-index: 1000;
+      padding: 0;
+      margin: 0;
+  
+      .dropdown-item {
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+        &:last-child {
+          border-bottom: none;
+        }
+      }
+    }
+  }
+  
+  // 화살표가 열린 상태일 때 위쪽을 가리키도록
+  .dropdown-button .arrow.up {
+    transform: rotate(180deg);
+  }
+  
