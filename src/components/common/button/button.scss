@@ -1,0 +1,56 @@
+.Button-Primary56 {
+  width: 13rem;
+  height: 13rem;
+  border-radius: 0.75rem;
+}
+
+.Button-Primary40 {
+  width: 7.625rem;
+  height: 2.5rem;
+  border-radius: 0.375rem;
+}
+
+// 버튼 상태별 스타일
+.enabled-Primary {
+  background: rgba(153, 53, 255, 1);
+}
+
+.disabled-Primary {
+  background: rgba(204, 204, 204, 1);
+}
+
+.hover-Primary {
+  background: rgba(134, 29, 238, 1);
+}
+
+.pressed-Primary {
+  background: rgba(110, 10, 209, 1);
+}
+
+.focus-Primary {
+  background: rgba(10, 10, 209, 1);
+}
+
+.enabled-Secondary {
+  background: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(153, 53, 255, 1);
+}
+
+.disabled-Secondary {
+  background: rgba(204, 204, 204, 1);
+}
+
+.hover-Secondary {
+  background: rgba(204, 204, 204, 1);
+  border: 1px solid rgba(134, 29, 238, 1);
+}
+
+.pressed-Secondary {
+  background: rgba(248, 240, 255, 1);
+  border: 1px solid rgba(110, 10, 209, 1);
+}
+
+.focus-Secondary {
+  background: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(110, 10, 209, 1);
+}
