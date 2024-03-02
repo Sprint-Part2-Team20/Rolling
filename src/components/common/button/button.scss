@@ -1,36 +1,28 @@
-.Button-Primary56 {
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+.Primary {
   display: inline-block;
-  width: 13rem;
-  height: 3.5rem;
-  border-radius: 0.75rem;
   border: none;
-  //글자
-  font-family: Pretendard;
-  font-size: 1.125rem;
-  font-weight: 700;
-  line-height: 1.75rem;
-  letter-spacing: -0.01em;
   text-align: center;
   color: rgba(255, 255, 255, 1);
-}
-
-.Button-Primary40 {
-  display: inline-block;
-  width: 7.625rem;
-  height: 2.5rem;
-  border-radius: 0.375rem;
-  border: none;
-  //글자
   font-family: Pretendard;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.625rem;
   letter-spacing: -0.01em;
-  text-align: center;
-  color: rgba(255, 255, 255, 1);
+  .Largest {
+    width: 13rem;
+    height: 3.5rem;
+    border-radius: 0.75rem;
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 1.75rem;
+  }
+  .Large {
+    width: 7.625rem;
+    height: 2.5rem;
+    border-radius: 0.375rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.625rem;
+  }
 }
-
-// 버튼 상태별 스타일
 .enabled-Primary {
   background: rgba(153, 53, 255, 1);
 }
@@ -51,7 +43,7 @@
   background: rgba(10, 10, 209, 1);
 }
 
-.button-Secondary {
+.Secondary {
   width: 7.625rem;
   height: 2.5rem;
   border-radius: 0.375rem;
@@ -64,71 +56,108 @@
   letter-spacing: -0.01em;
   text-align: center;
   color: rgba(134, 29, 238, 1);
-
-  .enabled-Secondary {
-    background: rgba(255, 255, 255, 1);
-    border: 1px solid rgba(153, 53, 255, 1);
-  }
-
-  .disabled-Secondary {
-    background: rgba(204, 204, 204, 1);
-  }
-
-  .hover-Secondary {
-    background: rgba(204, 204, 204, 1);
-    border: 1px solid rgba(134, 29, 238, 1);
-  }
-
-  .pressed-Secondary {
-    background: rgba(248, 240, 255, 1);
-    border: 1px solid rgba(110, 10, 209, 1);
-  }
-
-  .focus-Secondary {
-    background: rgba(255, 255, 255, 1);
-    border: 1px solid rgba(110, 10, 209, 1);
-  }
+}
+.enabled-Secondary {
+  background: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(153, 53, 255, 1);
 }
 
-.Button-Outlined56 {
-  display: inline-block;
-  width: 12rem;
-  height: 3.5rem;
-  border-radius: 0.75rem;
+.disabled-Secondary {
+  background: rgba(204, 204, 204, 1);
+}
 
+.hover-Secondary {
+  background: rgba(204, 204, 204, 1);
+  border: 1px solid rgba(134, 29, 238, 1);
+}
+
+.pressed-Secondary {
+  background: rgba(248, 240, 255, 1);
+  border: 1px solid rgba(110, 10, 209, 1);
+}
+
+.focus-Secondary {
+  background: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(110, 10, 209, 1);
+}
+.Outlined {
+  display: inline-block;
   font-family: Pretendard;
-  font-size: 1.125rem;
-  font-weight: 700;
-  line-height: 1.75rem;
   letter-spacing: -0.01em;
-  text-align: center;
-}
-.Button-Outlined40 {
-  display: inline-block;
-  width: 7.625rem;
-  height: 2.5rem;
-  border-radius: 0.375rem;
-  //글자
-  font-family: Pretendard;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.625rem;
-  letter-spacing: -0.01em;
-  text-align: center;
-}
-.Button-Outlined40-icon {
-  display: inline-block;
 
-  height: 2.5rem;
-  border-radius: 0.375rem;
-  //글자
-  font-family: Pretendard;
-  font-size: 1rem;
-  font-weight: 500;
-  line-height: 1.5rem;
-  letter-spacing: 0em;
-  text-align: left;
+  .largest {
+    width: 12rem;
+    height: 3.5rem;
+    border-radius: 0.75rem;
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 1.75rem;
+    text-align: center;
+  }
+  .large {
+    width: 7.625rem;
+    height: 2.5rem;
+    border-radius: 0.375rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.625rem;
+    text-align: center;
+  }
+  .large-icon {
+    height: 2.5rem;
+    border-radius: 0.375rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.625rem;
+    letter-spacing: -0.01em;
+    text-align: left;
+  }
+
+  .small {
+    width: 7.625rem;
+    height: 2.25rem;
+    border-radius: 0.375rem;
+    //글자
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    text-align: center;
+  }
+
+  .small-icon {
+    height: 2.25rem;
+    border-radius: 0.375rem;
+    //글자
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    text-align: left;
+  }
+
+  .smallest {
+    width: 7.625rem;
+    height: 1.75rem;
+    border-radius: 0.375rem;
+    //글자
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+    letter-spacing: -0.005em;
+    text-align: center;
+  }
+
+  .smallest-icon {
+    height: 2rem;
+    border-radius: 0.375rem;
+    //글자
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+    letter-spacing: -0.005em;
+    text-align: left;
+  }
 }
+
 .Button-Outlined36 {
   display: inline-block;
   width: 7.625rem;

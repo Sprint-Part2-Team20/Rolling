@@ -2,14 +2,27 @@ import React from 'react';
 import Button from './components/common/button/button';
 
 function App() {
+  const handleClick = () => {
+    alert('버튼이 클릭되었습니다!');
+  };
   return (
-    <Button
-      src="https://www.google.com"
-      buttonStyle="Button-Primary40"
-      buttonAble="enabled-Primary"
-    >
-      Enabled
-    </Button>
+    <div>
+      <Button
+        buttonStyle="plusAdd"
+        buttonAble="Enabled-plusAdd"
+        onClick={handleClick}
+      >
+        Enabled
+      </Button>
+      <Button
+        buttonStyle="Primary"
+        buttonSize="Largest"
+        buttonAble="enabled-Primary"
+        onClick={handleClick}
+      >
+        Enabled
+      </Button>
+    </div>
   );
 }
 
