@@ -1,13 +1,33 @@
 .Button-Primary56 {
+  display: inline-block;
   width: 13rem;
-  height: 13rem;
+  height: 3.5rem;
   border-radius: 0.75rem;
+  border: none;
+  //글자
+  font-family: Pretendard;
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.75rem;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
 }
 
 .Button-Primary40 {
+  display: inline-block;
   width: 7.625rem;
   height: 2.5rem;
   border-radius: 0.375rem;
+  border: none;
+  //글자
+  font-family: Pretendard;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.625rem;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
 }
 
 // 버튼 상태별 스타일
@@ -31,26 +51,165 @@
   background: rgba(10, 10, 209, 1);
 }
 
-.enabled-Secondary {
-  background: rgba(255, 255, 255, 1);
-  border: 1px solid rgba(153, 53, 255, 1);
+.button-Secondary {
+  width: 7.625rem;
+  height: 2.5rem;
+  border-radius: 0.375rem;
+  border: 0.0625rem solid;
+  //글자
+  font-family: Pretendard;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.625rem;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: rgba(134, 29, 238, 1);
+
+  .enabled-Secondary {
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(153, 53, 255, 1);
+  }
+
+  .disabled-Secondary {
+    background: rgba(204, 204, 204, 1);
+  }
+
+  .hover-Secondary {
+    background: rgba(204, 204, 204, 1);
+    border: 1px solid rgba(134, 29, 238, 1);
+  }
+
+  .pressed-Secondary {
+    background: rgba(248, 240, 255, 1);
+    border: 1px solid rgba(110, 10, 209, 1);
+  }
+
+  .focus-Secondary {
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(110, 10, 209, 1);
+  }
 }
 
-.disabled-Secondary {
+.Button-Outlined56 {
+  display: inline-block;
+  width: 12rem;
+  height: 3.5rem;
+  border-radius: 0.75rem;
+
+  font-family: Pretendard;
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.75rem;
+  letter-spacing: -0.01em;
+  text-align: center;
+}
+.Button-Outlined40 {
+  display: inline-block;
+  width: 7.625rem;
+  height: 2.5rem;
+  border-radius: 0.375rem;
+  //글자
+  font-family: Pretendard;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.625rem;
+  letter-spacing: -0.01em;
+  text-align: center;
+}
+.Button-Outlined40-icon {
+  display: inline-block;
+
+  height: 2.5rem;
+  border-radius: 0.375rem;
+  //글자
+  font-family: Pretendard;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.Button-Outlined36 {
+  display: inline-block;
+  width: 7.625rem;
+  height: 2.25rem;
+  border-radius: 0.375rem;
+  //글자
+  font-family: Pretendard;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.Button-Outlined36-icon {
+  display: inline-block;
+  height: 2.25rem;
+  border-radius: 0.375rem;
+  //글자
+  font-family: Pretendard;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.Button-Outlined28 {
+  display: inline-block;
+  width: 7.625rem;
+  height: 1.75rem;
+  border-radius: 0.375rem;
+  //글자
+  font-family: Pretendard;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+  letter-spacing: -0.005em;
+  text-align: center;
+}
+.Button-Outlined28-icon {
+  display: inline-block;
+  height: 2rem;
+  border-radius: 0.375rem;
+  //글자
+  font-family: Pretendard;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+  letter-spacing: -0.005em;
+  text-align: left;
+}
+
+.enabled-Outlined {
+  color: rgba(24, 24, 24, 1);
+  border: 0.0625rem solid rgba(204, 204, 204, 1);
+  background: rgba(255, 255, 255, 1);
+}
+
+.disabled-Outlined {
+  color: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(204, 204, 204, 1);
   background: rgba(204, 204, 204, 1);
 }
 
-.hover-Secondary {
-  background: rgba(204, 204, 204, 1);
-  border: 1px solid rgba(134, 29, 238, 1);
+.hover-Outlined {
+  color: rgba(24, 24, 24, 1);
+  border: 0.0625rem solid rgba(204, 204, 204, 1);
+  background: rgba(246, 246, 246, 1);
 }
 
-.pressed-Secondary {
-  background: rgba(248, 240, 255, 1);
-  border: 1px solid rgba(110, 10, 209, 1);
+.pressed-Outlined-gray {
+  color: rgba(24, 24, 24, 1);
+  background: rgba(246, 246, 246, 1);
+  border: 1px solid rgba(204, 204, 204, 1);
 }
-
-.focus-Secondary {
+.pressed-Outlined-white {
+  color: rgba(24, 24, 24, 1);
   background: rgba(255, 255, 255, 1);
-  border: 1px solid rgba(110, 10, 209, 1);
+  border: 1px solid rgba(85, 85, 85, 1);
+}
+.focus-Outlined {
+  color: rgba(24, 24, 24, 1);
+  background: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(85, 85, 85, 1);
 }

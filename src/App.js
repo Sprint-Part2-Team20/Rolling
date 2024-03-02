@@ -1,10 +1,14 @@
 import React from 'react';
-import Button from './components/common/button';
+import Button from './components/common/button/button';
 
 function App() {
   return (
-    <Button buttonStyle="Button-Primary40" buttonAble="enabled-Primary">
-      안녕
+    <Button
+      src="https://www.google.com"
+      buttonStyle="Button-Primary40"
+      buttonAble="enabled-Primary"
+    >
+      Enabled
     </Button>
   );
 }
