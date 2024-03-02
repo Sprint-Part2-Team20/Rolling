@@ -1,6 +1,9 @@
 .headerService {
   border-bottom: 0.0625rem solid var(--grayscale300);
   height: 4.25rem;
+  @media (max-width: 768px) {
+    height: 6.5rem;
+  }
   .headerServiceInner {
     display: flex;
     flex-direction: column;
