@@ -1,7 +1,9 @@
-import React from 'react';
+import { React, useEffect, useState } from 'react';
+import classNames from 'classnames';
 import styles from './card.module.scss';
 import formatCardCreatedDate from '../../../utils/formatDataFunctions';
 import Profile from '../Profile/Profile';
+
 /*
 카드 컴포넌트
 props는 PostPage에서 
@@ -23,12 +25,25 @@ map으로 하나씩 내려줍니다
 function Card({ props }) {
   const { sender, profileImageURL, relationship, content, font, createdAt } =
     props;
+  const [trimmedContent, setTrimmedContent] = useState(content);
   const date = formatCardCreatedDate(createdAt);
 
   const handleModalOpen = e => {
     e.preventDefault();
     console.log('클릭하면 모달 창 띄우기');
   };
+  const textClass = classNames(styles.text);
+
+  useEffect(() => {
+    const div = document.querySelector(`.${textClass}`);
+    if (
+      content.length > 87 &&
+      (div.scrollHeight > div.clientHeight || div.scrollWidth > div.clientWidth)
+    ) {
+      // 텍스트가 div를 넘어갈 때 생략 부호 추가
+      setTrimmedContent(`${content.substring(0, 87)}...`);
+    }
+  }, []);
 
   return (
     <button
@@ -42,10 +57,9 @@ function Card({ props }) {
         relationship={relationship}
         font={font}
       />
-
       <hr className={styles.underline} />
       <p className={styles.text} style={{ fontFamily: font }}>
-        {content}
+        {trimmedContent}
       </p>
       <p className={styles.date} style={{ fontFamily: font }}>
         {date}
