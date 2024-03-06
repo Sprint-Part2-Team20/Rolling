@@ -1,3 +1,30 @@
+/*
+import React from 'react';
+import { Route, Routes, BrowserRouter } from 'react-router-dom';
+import MainPage from './pages/MainPage/MainPage';
+import ListPage from './pages/ListPage/ListPage';
+import CardCreatePage from './pages/CardCreatePage/CardCreatePage';
+import PostPage from './pages/PostPage/PostPage';
+import PostEditPage from './pages/PostEditPage/PostEditPage';
+import MessageCreatePage from './pages/MessageCreatePage/MessageCreatePage';
+
+function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<MainPage />} />
+        <Route path="/post" element={<CardCreatePage />} />
+        <Route path="/post/:id" element={<PostPage />} />
+        <Route path="/post/:id/edit" element={<PostEditPage />} />
+        <Route path="/post/:id/message" element={<MessageCreatePage />} />
+        <Route path="/list" element={<ListPage />} />
+      </Routes>
+    </BrowserRouter>
+  );
+}
+
+export default App;
+*/
 import React from 'react';
 import Button from './components/common/Button/index';
 
@@ -136,33 +163,196 @@ function App() {
       </div>
       <div style={buttonTest2}>
         <Button
-          buttonStyle="PulsAdd"
-          buttonAble="enabled-PulsAdd"
+          buttonStyle="PlusAdd"
+          buttonAble="enabled-PlusAdd"
           onClick={handleClick}
         />
         <Button
-          buttonStyle="PulsAdd"
-          buttonAble="disabled-PulsAdd"
+          buttonStyle="PlusAdd"
+          buttonAble="disabled-PlusAdd"
           onClick={handleClick}
         />
         <Button
-          buttonStyle="PulsAdd"
-          buttonAble="hover-PulsAdd"
+          buttonStyle="PlusAdd"
+          buttonAble="hover-PlusAdd"
           onClick={handleClick}
         />
         <Button
-          buttonStyle="PulsAdd"
-          buttonAble="pressed-PulsAdd"
+          buttonStyle="PlusAdd"
+          buttonAble="pressed-PlusAdd"
           onClick={handleClick}
         />
         <Button
-          buttonStyle="PulsAdd"
-          buttonAble="focus-PulsAdd"
+          buttonStyle="PlusAdd"
+          buttonAble="focus-PlusAdd"
           onClick={handleClick}
         />
+      </div>
+      <div style={buttonTest2}>
+        <Button
+          buttonStyle="TrashCan"
+          buttonAble="enabled-TrashCan"
+          onClick={handleClick}
+        />
+        <Button
+          buttonStyle="TrashCan"
+          buttonAble="disabled-TrashCan"
+          onClick={handleClick}
+        />
+        <Button
+          buttonStyle="TrashCan"
+          buttonAble="hover-TrashCan"
+          onClick={handleClick}
+        />
+        <Button
+          buttonStyle="TrashCan"
+          buttonAble="pressed-TrashCan"
+          onClick={handleClick}
+        />
+        <Button
+          buttonStyle="TrashCan"
+          buttonAble="focus-TrashCan"
+          onClick={handleClick}
+        />
+      </div>
+      <div style={buttonTest2}>
+        <Button
+          buttonStyle="Outlined"
+          buttonAble="enabled-Outlined"
+          onClick={handleClick}
+        >
+          Enabled
+        </Button>
+        <Button
+          buttonStyle="Outlined"
+          buttonAble="disabled-Outlined"
+          onClick={handleClick}
+        >
+          Disabled
+        </Button>
+        <Button
+          buttonStyle="Outlined"
+          buttonAble="hover-Outlined"
+          onClick={handleClick}
+        >
+          Hover
+        </Button>
+        <Button
+          buttonStyle="Outlined"
+          buttonAble="pressed-Outlined-gray"
+          onClick={handleClick}
+        >
+          Pressed
+        </Button>
+        <Button
+          buttonStyle="Outlined"
+          buttonAble="pressed-Outlined-white"
+          onClick={handleClick}
+        >
+          Pressed
+        </Button>
+      </div>
+      <div style={buttonTest2}>
+        <Button
+          buttonStyle="Outlined"
+          buttonAble="enabled-Outlined"
+          buttonSize="large"
+          onClick={handleClick}
+        >
+          Enabled
+        </Button>
+        <Button
+          buttonStyle="Outlined"
+          buttonAble="disabled-Outlined"
+          buttonSize="large"
+          onClick={handleClick}
+        >
+          Disabled
+        </Button>
+        <Button
+          buttonStyle="Outlined"
+          buttonAble="disabled-Outlined"
+          buttonSize="large"
+          onClick={handleClick}
+        >
+          Disabled
+        </Button>
+        <Button
+          buttonStyle="Outlined"
+          buttonAble="hover-Outlined"
+          buttonSize="large"
+          onClick={handleClick}
+        >
+          Hover
+        </Button>
+        <Button
+          buttonStyle="Outlined"
+          buttonAble="pressed-Outlined-gray"
+          buttonSize="large"
+          onClick={handleClick}
+        >
+          Pressed
+        </Button>
+        <Button
+          buttonStyle="Outlined"
+          buttonAble="focus-Outlined"
+          buttonSize="large"
+          onClick={handleClick}
+        >
+          focus
+        </Button>
+      </div>
+      <div style={buttonTest2}>
+        <Button
+          buttonStyle="Outlined"
+          buttonAble="enabled-Outlined"
+          buttonSize="large-icon"
+          onClick={handleClick}
+        >
+          Enabled
+        </Button>
+        <Button
+          buttonStyle="Outlined"
+          buttonAble="disabled-Outlined"
+          buttonSize="large-icon"
+          onClick={handleClick}
+        >
+          Disabled
+        </Button>
+        <Button
+          buttonStyle="Outlined"
+          buttonAble="disabled-Outlined"
+          buttonSize="large-icon"
+          onClick={handleClick}
+        >
+          Disabled
+        </Button>
+        <Button
+          buttonStyle="Outlined"
+          buttonAble="hover-Outlined"
+          buttonSize="large-icon"
+          onClick={handleClick}
+        >
+          Hover
+        </Button>
+        <Button
+          buttonStyle="Outlined"
+          buttonAble="pressed-Outlined-gray"
+          buttonSize="large-icon"
+          onClick={handleClick}
+        >
+          Pressed
+        </Button>
+        <Button
+          buttonStyle="Outlined"
+          buttonAble="focus-Outlined"
+          buttonSize="large-icon"
+          onClick={handleClick}
+        >
+          focus
+        </Button>
       </div>
     </div>
   );
 }
-
 export default App;
