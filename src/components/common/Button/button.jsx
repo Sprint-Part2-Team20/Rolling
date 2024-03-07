@@ -53,7 +53,7 @@ function Button({
         className={styles.primary}
         onClick={onClick}
         disabled={disabled}
-        style={{ height: `${buttonSize}px;` }}
+        style={{ height: `${buttonSize}px` }}
         type="button"
       >
         {children}
@@ -66,7 +66,7 @@ function Button({
         className={styles.secondary}
         onClick={onClick}
         disabled={disabled}
-        style={{ height: `${buttonSize}px;` }}
+        style={{ height: `${buttonSize}px` }}
         type="button"
       >
         {children}
@@ -79,7 +79,7 @@ function Button({
         className={styles.outlined}
         onClick={onClick}
         disabled={disabled}
-        style={{ height: `${buttonSize}px;` }}
+        style={{ height: `${buttonSize}px` }}
         type="button"
       >
         {smile &&
