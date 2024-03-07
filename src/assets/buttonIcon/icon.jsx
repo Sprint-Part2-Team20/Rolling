@@ -10,6 +10,9 @@ import trashCanFocus from './trashCan-Focus.svg';
 import trashCanHover from './trashCan-Hover.svg';
 import trashCanPressed from './trashCan-Pressed.svg';
 
+import arrowLeft from './arrowLeft.svg';
+import arrowRight from './arrowRight.svg';
+
 export const plusAdd = [
   PlusAddEnabled,
   plusAddDisabled,
@@ -24,3 +27,5 @@ export const trashCan = [
   trashCanHover,
   trashCanPressed,
 ];
+
+export const arrow = [arrowRight, arrowLeft];

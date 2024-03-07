@@ -1,6 +1,6 @@
 import React from 'react';
 import './button.scss';
-import { plusAdd, trashCan } from '../../../assets/buttonIcon/icon';
+import { plusAdd, trashCan, arrow } from '../../../assets/buttonIcon/icon';
 import smiley from '../../../assets/add-emoji.svg';
 
 function Button({ children, buttonStyle, buttonSize, buttonAble, onClick }) {
@@ -34,7 +34,19 @@ function Button({ children, buttonStyle, buttonSize, buttonAble, onClick }) {
       index = 4;
     }
     buttonContent = <img src={trashCan[index]} alt="Trash Can" />;
-  } else if (buttonSize === 'large-icon') {
+  } else if (buttonStyle === 'Arrow') {
+    let index;
+    if (buttonAble === 'right-Arrow') {
+      index = 0;
+    } else if (buttonAble === 'left-Arrow') {
+      index = 1;
+    }
+    buttonContent = <img src={arrow[index]} alt="arrow button" />;
+  } else if (
+    buttonSize === 'large-icon' ||
+    buttonSize === 'small-icon' ||
+    buttonSize === 'smallest-icon'
+  ) {
     buttonContent = (
       <>
         <img src={smiley} alt="Smiley" />
