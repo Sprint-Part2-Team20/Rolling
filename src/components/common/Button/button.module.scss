@@ -1,0 +1,9 @@
+.plus {
+  background-color: var(--grayscale500);
+  width: 3.5rem;
+  height: 3.5rem;
+  border: none;
+  &:disabled {
+    background-color: var(--grayscale300);
+  }
+}
