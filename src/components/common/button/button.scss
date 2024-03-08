@@ -1,0 +1,237 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+.Primary {
+  display: inline-block;
+  border: none;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  font-family: Pretendard;
+  letter-spacing: -0.01em;
+
+  width: 13rem;
+  height: 3.5rem;
+  border-radius: 0.75rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.75rem;
+}
+
+.enabled-Primary {
+  background: rgba(153, 53, 255, 1);
+}
+
+.disabled-Primary {
+  background: rgba(204, 204, 204, 1);
+}
+
+.hover-Primary {
+  background: rgba(134, 29, 238, 1);
+}
+
+.pressed-Primary {
+  background: rgba(110, 10, 209, 1);
+}
+
+.focus-Primary {
+  background: rgba(110, 10, 209, 1);
+}
+
+.Secondary {
+  width: 7.625rem;
+  height: 2.5rem;
+  border-radius: 0.375rem;
+  border: 0.0625rem solid;
+
+  font-family: Pretendard;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.625rem;
+  letter-spacing: -0.01em;
+  text-align: center;
+}
+.enabled-Secondary {
+  background: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(153, 53, 255, 1);
+  color: rgba(134, 29, 238, 1);
+}
+
+.disabled-Secondary {
+  background: rgba(204, 204, 204, 1);
+  color: rgba(255, 255, 255, 1);
+}
+
+.hover-Secondary {
+  background: rgba(248, 240, 255, 1);
+
+  border: 1px solid rgba(134, 29, 238, 1);
+  color: rgba(153, 53, 255, 1);
+}
+
+.pressed-Secondary {
+  background: rgba(248, 240, 255, 1);
+  border: 1px solid rgba(110, 10, 209, 1);
+  color: rgba(153, 53, 255, 1);
+}
+
+.focus-Secondary {
+  background: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(110, 10, 209, 1);
+  color: rgba(151, 71, 255, 1);
+}
+
+.Outlined {
+  display: inline-block;
+  font-family: Pretendard;
+  letter-spacing: -0.01em;
+
+  width: 12rem;
+  height: 3.5rem;
+  border-radius: 0.75rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.75rem;
+  text-align: center;
+}
+
+.enabled-Outlined {
+  color: rgba(24, 24, 24, 1);
+  border: 1px solid rgba(204, 204, 204, 1);
+  background: rgba(255, 255, 255, 1);
+}
+
+.disabled-Outlined {
+  color: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(204, 204, 204, 1);
+  background: rgba(204, 204, 204, 1);
+}
+
+.hover-Outlined {
+  color: rgba(24, 24, 24, 1);
+  border: 0.0625rem solid rgba(204, 204, 204, 1);
+  background: rgba(246, 246, 246, 1);
+}
+
+.pressed-Outlined-gray {
+  color: rgba(24, 24, 24, 1);
+  background: rgba(246, 246, 246, 1);
+  border: 1px solid rgba(204, 204, 204, 1);
+}
+.pressed-Outlined-white {
+  color: rgba(24, 24, 24, 1);
+  background: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(85, 85, 85, 1);
+}
+.focus-Outlined {
+  color: rgba(24, 24, 24, 1);
+  background: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(85, 85, 85, 1);
+}
+
+.large {
+  width: 7.625rem;
+  height: 2.5rem;
+  border-radius: 0.375rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.625rem;
+  text-align: center;
+}
+.large-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.625rem;
+  width: auto;
+  white-space: nowrap;
+
+  height: 2.5rem;
+  border-radius: 0.375rem;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5rem;
+  letter-spacing: -0.01em;
+  text-align: left;
+  padding: 0.5rem 1rem;
+  img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+
+.small {
+  width: 7.625rem;
+  height: 2.25rem;
+  border-radius: 0.375rem;
+
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  text-align: center;
+}
+
+.small-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.625rem;
+  width: auto;
+  height: 2.25rem;
+  white-space: nowrap;
+  border-radius: 0.375rem;
+  padding: 0.375rem 1rem;
+
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  text-align: left;
+  img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+
+.smallest {
+  width: 7.625rem;
+  height: 1.75rem;
+  border-radius: 0.375rem;
+
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+  letter-spacing: -0.005em;
+  text-align: center;
+}
+
+.smallest-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.625rem;
+  width: auto;
+  height: 2rem;
+  border-radius: 0.375rem;
+  padding: 0.375rem 1rem;
+
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+  letter-spacing: -0.005em;
+  text-align: left;
+  img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+.PlusAdd {
+  border: none;
+  background-color: transparent;
+}
+.TrashCan {
+  border: none;
+  background-color: transparent;
+}
+
+.Arrow {
+  border: none;
+  background-color: transparent;
+}

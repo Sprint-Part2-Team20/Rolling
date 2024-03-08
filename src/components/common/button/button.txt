@@ -1,0 +1,50 @@
+버튼 이미지 관리
+1. assets 디렉토리 안에 buttonIcon 폴더 만들어서 버튼 이미지 모아 놓았습니다. 
+2. buttonIcon 폴더안에 icon.jsx파일 만들어 `import로 사용 할 이미지` 배열로 저장해놓았습니다.
+
+
+
+버튼 설명서: 롤링피그마 버튼 컴포넌트 보면서 읽으시면 이해가 편합니다.
+Button 컴포넌트 속성
+
+1. buttonStyle
+
+Primary 특징: 사이즈가 기본, large 두개
+Secondary 특징: 사이즈가 기본뿐 입니다.
+
+Outlined: 모든 buttonSize가 있다. 기본사이즈(56)에 focus가 없고 pressed가 색깔별로 두개 *pressed-Outlined-gray, pressed-Outlined-white*
+PlusAdd(+버튼)
+TrashCan(쓰레기통버튼)
+Arrow(화살표버튼) 특징: buttonAble 속성이 두개뿐. right-Arrow, left-Arrow
+
+2. buttonSize
+56 = buttonSize 속성 지정 안하면 됩니다.
+40 = large
+36 = small
+28 = smallest
+아이콘이 있는 경우: (size 지정후) -icon 를 붙여 주면됩니다
+ Ex.large-icon
+
+
+3. buttonAble
+enabled, disabled, hover, pressed, focus 등 기능으로 나눴습니다.
+사용방법은 (위 기능들 소문자로 시작)-(buttonStyle 대문자로시작)
+ex.enabled-Outlined
+
+
+버튼 구현못한것 및 개선해야할점
+
+1. Rectangle 아이코 버튼 박스 못했습니다..
+2. toggle button 만들었을까요?
+3. buttonStyle buttonSize buttonAble 위 3가지 props들 중 빠져도 되는 경우가 있어서, 
+그럴 경우 className에 undefined가 값이 넣어진다 문제는 없으나.. 괜한 오류 발생 걱정
+-> 기본값 지정 해보겠습니다
+
+ex.<Button
+    buttonStyle="Primary"
+    buttonAble="disabled-Primary"
+    onClick={handleClick}
+    >
+    Disabled
+    </Button>
+인 경우 className = "Primary undefined disabled-Primary"
