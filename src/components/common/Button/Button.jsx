@@ -1,12 +1,13 @@
-import styles from './button.module.scss';
-
-//나중에 이미지 임포트 파일로 옮겨주기
-import plus from '../../../assets/plus.svg';
-import smileBlack from '../../../assets/smile.svg';
-import smileWhite from '../../../assets/smile-white.svg';
-import deleted from '../../../assets/deleted-black.svg';
-import deletedWhite from '../../../assets/deleted-white.svg';
+import React from 'react';
 import { useMediaQuery } from 'react-responsive';
+import styles from './button.module.scss';
+import {
+  plus,
+  deleted,
+  deletedWhite,
+  smileBlack,
+  smileWhite,
+} from '../../../utils/imageImport';
 
 // 모달창에서 사용하는 버튼만
 // 따로 만들어 주시면 될 것 같아요
@@ -33,7 +34,7 @@ function Button({
         disabled={disabled}
         type="button"
       >
-        <img src={plus} />
+        <img src={plus} alt="plus" />
       </button>
     );
   }
@@ -45,7 +46,7 @@ function Button({
         disabled={disabled}
         type="button"
       >
-        <img src={disabled ? deletedWhite : deleted} />
+        <img src={disabled ? deletedWhite : deleted} alt="deleted" />
       </button>
     );
   }
@@ -101,7 +102,11 @@ function Button({
         type="button"
       >
         {smile &&
-          (disabled ? <img src={smileWhite} /> : <img src={smileBlack} />)}
+          (disabled ? (
+            <img src={smileWhite} alt="smile" />
+          ) : (
+            <img src={smileBlack} alt="smile" />
+          ))}
         {children}
       </button>
     );
