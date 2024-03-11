@@ -89,7 +89,7 @@ function CardCreatePage() {
           type="button"
           className={`${styles.cardCreateButton} ${!inputValue.trim() ? styles.disabledButton : ''}`}
           onClick={handleCreateRecipient}
-          // 공백 제외 인풋이 비어있으면 버튼 비활성화
+          // 공백 제외 인풋이 비어있으면 버튼 비활성화함
           disabled={!inputValue.trim()}
         >
           생성하기
